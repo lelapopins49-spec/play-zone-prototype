@@ -1,0 +1,97 @@
+/* whatsapp-float.css */
+
+/* ── Wrapper — controls visibility ── */
+.wa-float {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: 900;
+  transition: opacity var(--transition-normal),
+              transform var(--transition-normal);
+}
+
+/* Hidden state — toggled by JS when contact section is visible */
+.wa-float.is-hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
+}
+
+/* ── Button ── */
+.wa-float-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-full);
+  background-color: #25D366;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  transition: background-color var(--transition-fast),
+              transform        var(--transition-fast),
+              box-shadow       var(--transition-fast);
+}
+
+.wa-float-btn:hover {
+  background-color: #1fba59;
+  transform: scale(1.08);
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.6);
+}
+
+.wa-float-btn:active {
+  transform: scale(0.96);
+}
+
+/* ── WhatsApp SVG icon ── */
+.wa-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Pulse rings ── */
+.wa-pulse {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-full);
+  background-color: #25D366;
+  opacity: 0;
+  animation: wa-pulse-ring 2.4s ease-out infinite;
+}
+
+.wa-pulse--delay {
+  animation-delay: 1.2s;
+}
+
+@keyframes wa-pulse-ring {
+  0%   { transform: scale(1);   opacity: 0.55; }
+  80%  { transform: scale(1.7); opacity: 0; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+
+/* ── Respect reduced-motion preference ── */
+@media (prefers-reduced-motion: reduce) {
+  .wa-pulse { animation: none; }
+}
+
+/* ── Shift up on mobile so it clears browser chrome ── */
+@media (max-width: 480px) {
+  .wa-float {
+    bottom: var(--space-5);
+    right: var(--space-4);
+  }
+
+  .wa-float-btn {
+    width: 54px;
+    height: 54px;
+  }
+
+  .wa-icon {
+    width: 26px;
+    height: 26px;
+  }
+}

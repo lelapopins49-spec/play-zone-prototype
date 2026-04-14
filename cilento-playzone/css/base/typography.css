@@ -1,0 +1,70 @@
+/* typography.css */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-normal);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: var(--leading-normal);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-normal); /* Fredoka One is a display weight by default */
+  line-height: var(--leading-tight);
+  color: var(--color-white);
+}
+
+h1 { font-size: var(--text-5xl); }
+h2 { font-size: var(--text-4xl); }
+h3 { font-size: var(--text-3xl); }
+h4 { font-size: var(--text-2xl); }
+
+@media (max-width: 768px) {
+  h1 { font-size: var(--text-4xl); }
+  h2 { font-size: var(--text-3xl); }
+  h3 { font-size: var(--text-2xl); }
+  h4 { font-size: var(--text-xl); }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: var(--text-3xl); }
+  h2 { font-size: var(--text-2xl); }
+  h3 { font-size: var(--text-xl); }
+  h4 { font-size: var(--text-lg); }
+}
+
+p {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-normal);
+  max-width: 65ch;
+}
+
+a {
+  color: var(--color-brand-pink);
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-neon-green);
+}
+
+strong {
+  font-weight: var(--font-bold);
+  color: var(--color-white);
+}
+
+/* Utility: coloured text highlights used in headings */
+.text-pink  { color: var(--color-brand-pink); }
+.text-green { color: var(--color-neon-green); }
+.text-gold  { color: var(--color-star-gold);  }
+.text-blue  { color: var(--color-galaxy-blue);}

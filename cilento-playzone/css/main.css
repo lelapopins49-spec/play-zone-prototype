@@ -1,0 +1,18 @@
+/* main.css — imports all other CSS files */
+
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/typography.css');
+
+@import url('./components/buttons.css');
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+@import url('./components/cookie-banner.css');
+@import url('./components/whatsapp-float.css');
+
+@import url('./sections/hero.css');
+@import url('./sections/feste.css');
+@import url('./sections/animazione.css');
+@import url('./sections/gallery.css');
+@import url('./sections/testimonials.css');
+@import url('./sections/contatti.css');

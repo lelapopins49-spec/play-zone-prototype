@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cilento Playzone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- Header / Nav -->
+  <header id="header" class="site-header">
+    <div class="header-inner">
+
+      <!-- Logo (placeholder until Phase 1 logo task) -->
+      <a href="#hero" class="logo" aria-label="Cilento Playzone — torna in cima">
+        <span class="logo-icon">★</span>
+        <span class="logo-text">Cilento <span class="logo-text-accent">Playzone</span></span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#hero">Home</a></li>
+          <li><a class="nav-link" href="#feste">Feste</a></li>
+          <li><a class="nav-link" href="#animazione">Animazione</a></li>
+          <li><a class="nav-link" href="#galleria">Galleria</a></li>
+          <li><a class="nav-link" href="#testimonianze">Recensioni</a></li>
+          <li><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
+          <li><a class="nav-link nav-link-cta btn btn-primary btn-sm" href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a class="nav-link" href="#hero">Home</a></li>
+        <li><a class="nav-link" href="#feste">Feste</a></li>
+        <li><a class="nav-link" href="#animazione">Animazione</a></li>
+        <li><a class="nav-link" href="#galleria">Galleria</a></li>
+        <li><a class="nav-link" href="#testimonianze">Recensioni</a></li>
+        <li><a class="nav-link" href="#chi-siamo">Chi Siamo</a></li>
+        <li><a class="nav-link nav-link-cta btn btn-primary" href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+
+    <!-- Starfield (CSS-animated dots injected via JS, fallback static ones here) -->
+    <div class="hero-stars" aria-hidden="true">
+      <span class="star star--sm" style="top:8%;  left:12%"></span>
+      <span class="star star--md" style="top:15%; left:35%"></span>
+      <span class="star star--sm" style="top:22%; left:58%"></span>
+      <span class="star star--lg" style="top:10%; left:78%"></span>
+      <span class="star star--sm" style="top:35%; left:5%"></span>
+      <span class="star star--md" style="top:45%; left:90%"></span>
+      <span class="star star--sm" style="top:55%; left:22%"></span>
+      <span class="star star--lg" style="top:60%; left:68%"></span>
+      <span class="star star--sm" style="top:70%; left:45%"></span>
+      <span class="star star--md" style="top:75%; left:15%"></span>
+      <span class="star star--sm" style="top:80%; left:82%"></span>
+      <span class="star star--md" style="top:88%; left:55%"></span>
+      <span class="star star--sm" style="top:5%;  left:50%"></span>
+      <span class="star star--lg" style="top:30%; left(48%)"></span>
+      <span class="star star--sm" style="top:92%; left:30%"></span>
+    </div>
+
+    <!-- Decorative glow orbs -->
+    <div class="hero-orb hero-orb--pink"  aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--blue"  aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--green" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">🎉 Cilento · Vallo della Lucania</p>
+
+      <h1 class="hero-headline">
+        Il posto dove<br>
+        i sogni diventano<br>
+        <span class="text-pink">feste indimenticabili</span>
+      </h1>
+
+      <p class="hero-sub">
+        Ludoteca, feste di compleanno e animazione per bambini.<br>
+        Magia, colori e tanto divertimento in un posto <span class="text-green">unico</span>.
+      </p>
+
+      <div class="hero-cta-row">
+        <a href="#contatti" class="btn btn-primary btn-lg">Prenota la festa</a>
+        <a href="#feste"    class="btn btn-secondary btn-lg">Scopri di più</a>
+      </div>
+
+      <a href="tel:+393387299939" class="hero-phone">
+        <span class="hero-phone-icon" aria-hidden="true">📞</span>
+        <span class="hero-phone-number">338 729 9939</span>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Feste di Compleanno -->
+  <section id="feste" class="section section--alt">
+    <div class="section-inner">
+
+      <div class="section-header">
+        <p class="section-eyebrow text-pink">🎂 Feste di Compleanno</p>
+        <h2>Una festa da favola<br>per il tuo bambino</h2>
+        <p class="section-lead">Trasformiamo ogni compleanno in un ricordo magico. Dalla decorazione al taglio della torta, pensiamo a tutto noi — tu rilassati e goditi la festa.</p>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🎈</div>
+          <h3 class="feature-title">Decorazioni a tema</h3>
+          <p class="feature-desc">Palloncini, allestimenti colorati e atmosfere personalizzate per ogni tema scelto dal bambino: principesse, supereroi, spazio e molto altro.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🎂</div>
+          <h3 class="feature-title">Torta e dolci</h3>
+          <p class="feature-desc">Organizziamo il momento del taglio della torta con musica, canti e tanta gioia. Porta la tua torta o affidati ai nostri partner locali.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🎪</div>
+          <h3 class="feature-title">Intrattenimento</h3>
+          <p class="feature-desc">Animatori professionisti, giochi di gruppo, musica e balli per tenere tutti i bambini felici e coinvolti per tutta la durata della festa.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📸</div>
+          <h3 class="feature-title">Ricordi immortali</h3>
+          <p class="feature-desc">Momenti da conservare per sempre. Angoli foto scenografici e atmosfere uniche per scatti meravigliosi che durano nel tempo.</p>
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="#contatti" class="btn btn-primary btn-lg">Prenota la festa</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Animazione -->
+  <section id="animazione" class="section">
+    <div class="section-inner">
+
+      <div class="section-header">
+        <p class="section-eyebrow text-green">✨ Animazione</p>
+        <h2>Magia e divertimento<br>senza limiti</h2>
+        <p class="section-lead">Il nostro team di animatori crea esperienze uniche che lasciano i bambini a bocca aperta. Ogni servizio è pensato per stupire, coinvolgere e far ridere.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🎨</div>
+          <h3 class="service-title">Truccabimbi</h3>
+          <p class="service-desc">Trasformazioni magiche con colori atossici e sicuri per la pelle. Tigri, farfalle, supereroi — ogni bambino sceglierà il suo personaggio preferito.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🎮</div>
+          <h3 class="service-title">Giochi e gare</h3>
+          <p class="service-desc">Cacce al tesoro, giochi di squadra, staffette colorate e tornei divertenti. Attività pensate per ogni età, sempre in sicurezza e con tanto entusiasmo.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🦸</div>
+          <h3 class="service-title">Personaggi a tema</h3>
+          <p class="service-desc">I personaggi preferiti dai bambini prendono vita! Dai principi alle principesse, dai supereroi agli unicorni: sorprese che i piccoli non dimenticheranno mai.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🎭</div>
+          <h3 class="service-title">Spettacoli e show</h3>
+          <p class="service-desc">Mini spettacoli di magia, bolle di sapone giganti e performance interattive che coinvolgono grandi e piccini in un'atmosfera di pura meraviglia.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🎵</div>
+          <h3 class="service-title">Musica e balli</h3>
+          <p class="service-desc">Playlist allegre, balli di gruppo e karaoke per bambini. La pista da ballo si anima con le canzoni più amate e i balli più scatenati del momento.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon" aria-hidden="true">🎁</div>
+          <h3 class="service-title">Laboratori creativi</h3>
+          <p class="service-desc">Attività manuali, pittura, creazione di gadget personalizzati. I bambini portano a casa qualcosa di fatto con le proprie mani come ricordo speciale.</p>
+        </div>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="#contatti" class="btn btn-secondary btn-lg">Richiedi informazioni</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Galleria -->
+  <section id="galleria" class="section">
+    <div class="section-inner">
+
+      <div class="section-header">
+        <p class="section-eyebrow text-gold">📸 La Nostra Galleria</p>
+        <h2>Momenti di pura gioia</h2>
+        <p class="section-lead">Ogni foto racconta una storia di sorrisi, magia e divertimento. Scorri la galleria e lasciati ispirare per la prossima festa.</p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+
+        <button class="gallery-item" data-index="0" aria-label="Apri foto 1">
+          <div class="gallery-placeholder gallery-placeholder--pink">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🎈</span>
+            <span class="gallery-placeholder-label">Decorazioni festa</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="1" aria-label="Apri foto 2">
+          <div class="gallery-placeholder gallery-placeholder--purple">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🎂</span>
+            <span class="gallery-placeholder-label">Torta di compleanno</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="2" aria-label="Apri foto 3">
+          <div class="gallery-placeholder gallery-placeholder--blue">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🎭</span>
+            <span class="gallery-placeholder-label">Animazione</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="3" aria-label="Apri foto 4">
+          <div class="gallery-placeholder gallery-placeholder--green">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🎨</span>
+            <span class="gallery-placeholder-label">Truccabimbi</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="4" aria-label="Apri foto 5">
+          <div class="gallery-placeholder gallery-placeholder--gold">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🦸</span>
+            <span class="gallery-placeholder-label">Personaggi a tema</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="5" aria-label="Apri foto 6">
+          <div class="gallery-placeholder gallery-placeholder--pink">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🎵</span>
+            <span class="gallery-placeholder-label">Musica e balli</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="6" aria-label="Apri foto 7">
+          <div class="gallery-placeholder gallery-placeholder--purple">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🎮</span>
+            <span class="gallery-placeholder-label">Giochi di gruppo</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="7" aria-label="Apri foto 8">
+          <div class="gallery-placeholder gallery-placeholder--blue">
+            <span class="gallery-placeholder-icon" aria-hidden="true">🎁</span>
+            <span class="gallery-placeholder-label">Laboratori creativi</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+        <button class="gallery-item" data-index="8" aria-label="Apri foto 9">
+          <div class="gallery-placeholder gallery-placeholder--green">
+            <span class="gallery-placeholder-icon" aria-hidden="true">⭐</span>
+            <span class="gallery-placeholder-label">Momenti speciali</span>
+          </div>
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-zoom-icon">🔍</span>
+          </div>
+        </button>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox" aria-modal="true" aria-label="Visualizzatore foto" role="dialog" aria-hidden="true">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <div class="lightbox-media" id="lightbox-media"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Chiudi">✕</button>
+    <button class="lightbox-prev"  id="lightbox-prev"  aria-label="Foto precedente">&#8249;</button>
+    <button class="lightbox-next"  id="lightbox-next"  aria-label="Foto successiva">&#8250;</button>
+  </div>
+
+  <!-- Testimonianze -->
+  <section id="testimonianze" class="section section--alt">
+    <div class="section-inner">
+
+      <div class="section-header">
+        <p class="section-eyebrow text-gold">💬 Testimonianze</p>
+        <h2>Cosa dicono le famiglie</h2>
+        <p class="section-lead">La soddisfazione dei genitori e la felicità dei bambini sono la nostra ricompensa più grande.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stelle su 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-quote">
+            "Abbiamo organizzato il compleanno di Sofia qui e sono rimasta senza parole. Gli animatori sono stati fantastici, i bambini si sono divertiti moltissimo e l'allestimento era bellissimo. Sofia ne parla ancora ogni giorno!"
+          </blockquote>
+          <footer class="testimonial-footer">
+            <div class="testimonial-avatar" aria-hidden="true">MR</div>
+            <div class="testimonial-meta">
+              <span class="testimonial-name">Maria Russo</span>
+              <span class="testimonial-occasion">Festa di compleanno · 6 anni</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stelle su 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-quote">
+            "Il truccabimbi e i personaggi a tema hanno reso la festa di Luca qualcosa di magico. L'organizzazione è stata impeccabile, il personale gentilissimo e professionale. Torneremo sicuramente per il prossimo anno!"
+          </blockquote>
+          <footer class="testimonial-footer">
+            <div class="testimonial-avatar" aria-hidden="true">GF</div>
+            <div class="testimonial-meta">
+              <span class="testimonial-name">Giuseppe Ferrara</span>
+              <span class="testimonial-occasion">Animazione · Festa privata</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="5 stelle su 5">
+            <span aria-hidden="true">★★★★★</span>
+          </div>
+          <blockquote class="testimonial-quote">
+            "Finalmente un posto così nel Cilento! I miei gemelli hanno festeggiato insieme e lo staff ha gestito tutto alla perfezione. Spazio pulito, sicuro e pieno di colore. Consiglio a tutti i genitori della zona!"
+          </blockquote>
+          <footer class="testimonial-footer">
+            <div class="testimonial-avatar" aria-hidden="true">AC</div>
+            <div class="testimonial-meta">
+              <span class="testimonial-name">Anna Conte</span>
+              <span class="testimonial-occasion">Festa di compleanno · 8 anni</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Chi Siamo -->
+  <section id="chi-siamo" class="section section--alt">
+    <div class="section-inner">
+
+      <div class="chi-siamo-layout">
+
+        <!-- Text column -->
+        <div class="chi-siamo-text">
+          <p class="section-eyebrow text-gold">💛 Chi Siamo</p>
+          <h2>Nati per far sorridere<br>i bambini del Cilento</h2>
+          <p>Cilento Playzone è la ludoteca e il centro feste di riferimento a Vallo della Lucania, nel cuore del Cilento. Siamo una realtà giovane e appassionata, nata dall'amore per i bambini e dalla voglia di portare magia e spensieratezza in ogni festa.</p>
+          <p>Il nostro team di animatori è selezionato con cura: persone entusiaste, creative e attente alla sicurezza, pronte a creare esperienze che i bambini e le famiglie ricorderanno per sempre.</p>
+          <p>Ogni spazio è pensato per essere accogliente, colorato e sicuro. Perché quando i bambini sono felici, le famiglie lo sono ancora di più.</p>
+
+          <ul class="chi-siamo-values">
+            <li>
+              <span class="value-icon" aria-hidden="true">🛡️</span>
+              <span><strong>Sicurezza prima di tutto</strong> — ambienti certificati e animatori formati</span>
+            </li>
+            <li>
+              <span class="value-icon" aria-hidden="true">🌈</span>
+              <span><strong>Creatività senza confini</strong> — ogni festa è unica e personalizzata</span>
+            </li>
+            <li>
+              <span class="value-icon" aria-hidden="true">📍</span>
+              <span><strong>Orgogliosamente cilentani</strong> — radici nel territorio, cuore aperto a tutti</span>
+            </li>
+          </ul>
+
+          <a href="#contatti" class="btn btn-primary">Contattaci</a>
+        </div>
+
+        <!-- Stats / highlights column -->
+        <div class="chi-siamo-stats">
+          <div class="stat-card">
+            <span class="stat-number text-pink">500+</span>
+            <span class="stat-label">Feste organizzate</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number text-green">1000+</span>
+            <span class="stat-label">Bambini felici</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number text-gold">5★</span>
+            <span class="stat-label">Valutazione media</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number text-pink">3+</span>
+            <span class="stat-label">Anni di attività</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contatti -->
+  <section id="contatti" class="section section--alt">
+    <div class="section-inner">
+
+      <div class="section-header">
+        <p class="section-eyebrow text-pink">📬 Contatti</p>
+        <h2>Prenota la tua festa</h2>
+        <p class="section-lead">Compila il modulo oppure chiamaci direttamente. Risponderemo entro 24 ore per definire ogni dettaglio insieme.</p>
+      </div>
+
+      <div class="contatti-layout">
+
+        <!-- Contact info column -->
+        <div class="contatti-info">
+
+          <!-- Phone block -->
+          <div class="contact-block contact-block--phone">
+            <div class="contact-block-icon" aria-hidden="true">📞</div>
+            <div class="contact-block-body">
+              <span class="contact-block-label">Chiamaci</span>
+              <a href="tel:+393387299939" class="contact-phone-number">338 729 9939</a>
+              <span class="contact-block-note">Lun – Sab, 9:00 – 20:00</span>
+            </div>
+          </div>
+
+          <!-- WhatsApp block -->
+          <div class="contact-block">
+            <div class="contact-block-icon" aria-hidden="true">💬</div>
+            <div class="contact-block-body">
+              <span class="contact-block-label">Scrivici su WhatsApp</span>
+              <a
+                href="https://wa.me/393387299939?text=Ciao!%20Vorrei%20informazioni%20sulle%20feste%20di%20compleanno."
+                class="btn btn-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Apri WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- Location block -->
+          <div class="contact-block">
+            <div class="contact-block-icon" aria-hidden="true">📍</div>
+            <div class="contact-block-body">
+              <span class="contact-block-label">Dove siamo</span>
+              <span class="contact-block-text">Vallo della Lucania (SA)<br>Cilento, Campania</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form card -->
+        <div class="contatti-form-card">
+          <form id="contact-form" class="contact-form" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Nome e cognome <span class="form-required" aria-hidden="true">*</span></label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="es. Maria Russo"
+                  required
+                />
+                <span class="form-error" id="error-name" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email <span class="form-required" aria-hidden="true">*</span></label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="es. maria@email.it"
+                  required
+                />
+                <span class="form-error" id="error-email" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Telefono</label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  id="contact-phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="es. 338 729 9939"
+                />
+                <span class="form-error" id="error-phone" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-date">Data della festa</label>
+                <input
+                  class="form-input"
+                  type="date"
+                  id="contact-date"
+                  name="date"
+                />
+                <span class="form-error" id="error-date" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Messaggio <span class="form-required" aria-hidden="true">*</span></label>
+              <textarea
+                class="form-input form-textarea"
+                id="contact-message"
+                name="message"
+                rows="4"
+                placeholder="Raccontaci della festa: età del bambino, tema desiderato, numero di ospiti..."
+                required
+              ></textarea>
+              <span class="form-error" id="error-message" role="alert"></span>
+            </div>
+
+            <p class="form-required-note"><span aria-hidden="true">*</span> Campi obbligatori</p>
+
+            <button type="submit" class="btn btn-primary btn-lg form-submit">
+              <span class="form-submit-text">Invia richiesta</span>
+            </button>
+
+          </form>
+
+          <!-- Success message (hidden until submit) -->
+          <div class="form-success" id="form-success" aria-live="polite" hidden>
+            <span class="form-success-icon" aria-hidden="true">🎉</span>
+            <h3>Messaggio inviato!</h3>
+            <p>Grazie per averci contattato. Ti risponderemo entro 24 ore per organizzare la festa perfetta.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="site-footer">
+    <div class="footer-inner">
+
+      <!-- Col 1: Logo + tagline -->
+      <div class="footer-col footer-col--brand">
+        <a href="#hero" class="logo footer-logo" aria-label="Cilento Playzone — torna in cima">
+          <span class="logo-icon">★</span>
+          <span class="logo-text">Cilento <span class="logo-text-accent">Playzone</span></span>
+        </a>
+        <p class="footer-tagline">Ludoteca e feste di compleanno per bambini nel cuore del Cilento.</p>
+        <!-- Instagram -->
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/cilento.playzone"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Seguici su Instagram"
+          >
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>@cilento.playzone</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Nav links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Sezioni</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#feste">Feste di Compleanno</a></li>
+          <li><a href="#animazione">Animazione</a></li>
+          <li><a href="#galleria">Galleria</a></li>
+          <li><a href="#testimonianze">Recensioni</a></li>
+          <li><a href="#chi-siamo">Chi Siamo</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact info -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Contatti</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <span class="footer-contact-icon" aria-hidden="true">📞</span>
+            <a href="tel:+393387299939">338 729 9939</a>
+          </li>
+          <li>
+            <span class="footer-contact-icon" aria-hidden="true">💬</span>
+            <a
+              href="https://wa.me/393387299939?text=Ciao!%20Vorrei%20informazioni%20sulle%20feste%20di%20compleanno."
+              target="_blank"
+              rel="noopener noreferrer"
+            >WhatsApp</a>
+          </li>
+          <li>
+            <span class="footer-contact-icon" aria-hidden="true">📍</span>
+            <span>Vallo della Lucania (SA)<br>Cilento, Campania</span>
+          </li>
+          <li>
+            <span class="footer-contact-icon" aria-hidden="true">🕐</span>
+            <span>Lun – Sab, 9:00 – 20:00</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="footer-copyright">
+          &copy; 2025 Cilento Playzone · P.IVA XXXXXXXXXX
+        </p>
+        <nav class="footer-legal-links" aria-label="Link legali">
+          <a href="#privacy-policy" id="privacy-policy-trigger">Privacy Policy</a>
+          <a href="#privacy-policy" id="cookie-policy-trigger">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div id="whatsapp-float" class="wa-float" aria-hidden="true">
+    <a
+      href="https://wa.me/393387299939?text=Ciao!%20Vorrei%20informazioni%20sulle%20feste%20di%20compleanno."
+      class="wa-float-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Scrivici su WhatsApp"
+      tabindex="-1"
+    >
+      <!-- Pulse rings -->
+      <span class="wa-pulse" aria-hidden="true"></span>
+      <span class="wa-pulse wa-pulse--delay" aria-hidden="true"></span>
+
+      <!-- WhatsApp icon (inline SVG for no extra request) -->
+      <svg class="wa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

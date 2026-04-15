@@ -71,7 +71,7 @@
 
 .contact-block-text {
   font-size: var(--text-base);
-  color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
   line-height: var(--leading-normal);
 }
 
@@ -109,7 +109,7 @@
 .form-label {
   font-size: var(--text-sm);
   font-weight: var(--font-semi);
-  color: rgba(255, 255, 255, 0.85);
+  color: #ffffff;
 }
 
 .form-required {

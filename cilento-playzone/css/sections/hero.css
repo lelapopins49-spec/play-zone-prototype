@@ -121,7 +121,7 @@
 /* ── Subheadline ── */
 .hero-sub {
   font-size: var(--text-lg);
-  color: rgba(255, 255, 255, 0.75);
+  color: #ffffff;
   line-height: 1.7;
   max-width: 560px;
 }

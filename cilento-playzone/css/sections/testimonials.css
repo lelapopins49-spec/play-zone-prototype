@@ -42,7 +42,7 @@
 .testimonial-quote {
   font-size: var(--text-base);
   font-style: italic;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   line-height: var(--leading-normal);
   max-width: none;
   flex: 1;

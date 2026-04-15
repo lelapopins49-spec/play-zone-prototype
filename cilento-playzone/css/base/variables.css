@@ -15,7 +15,7 @@
   --color-bg:             var(--color-deep-space);
   --color-bg-alt:         #12103A;
   --color-text:           var(--color-white);
-  --color-text-muted:     rgba(255, 255, 255, 0.65);
+  --color-text-muted:     #ffffff;
   --color-accent:         var(--color-brand-pink);
   --color-accent-2:       var(--color-neon-green);
 

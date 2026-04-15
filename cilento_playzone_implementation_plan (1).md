@@ -19,7 +19,7 @@ Header → Hero → Feste di Compleanno → Animazione → Galleria → Testimon
 
 ---
 
-## File Structure
+## File Structure (note)
 
 ```
 cilento-playzone/
@@ -77,14 +77,14 @@ cilento-playzone/
 
 ---
 
-## Phase 2 — Header & Navigation
+## Phase 2 — Header & Navigation 
 > Sticky nav with smooth-scroll anchors to each section
 
 - [x] Build sticky header bar — dark bg, logo left, nav links right, sticks on scroll
 - [x] Add smooth-scroll anchor links (Hero, Feste, Animazione, Galleria, Testimonianze, Chi Siamo, Contatti)
 - [x] Build mobile hamburger menu — slide-down nav for screens under 768px
 - [x] Active section highlight on scroll — JS IntersectionObserver to highlight current nav item
-
+//ok great
 ---
 
 ## Phase 3 — Hero Section

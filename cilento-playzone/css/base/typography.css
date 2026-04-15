@@ -18,28 +18,62 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
-  font-weight: var(--font-normal); /* Fredoka One is a display weight by default */
+  font-weight: var(--font-normal);
+  /* Fredoka One is a display weight by default */
   line-height: var(--leading-tight);
   color: var(--color-white);
 }
 
-h1 { font-size: var(--text-5xl); }
-h2 { font-size: var(--text-4xl); }
-h3 { font-size: var(--text-3xl); }
-h4 { font-size: var(--text-2xl); }
+h1 {
+  font-size: var(--text-5xl);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+}
 
 @media (max-width: 768px) {
-  h1 { font-size: var(--text-4xl); }
-  h2 { font-size: var(--text-3xl); }
-  h3 { font-size: var(--text-2xl); }
-  h4 { font-size: var(--text-xl); }
+  h1 {
+    font-size: var(--text-4xl);
+  }
+
+  h2 {
+    font-size: var(--text-3xl);
+  }
+
+  h3 {
+    font-size: var(--text-2xl);
+  }
+
+  h4 {
+    font-size: var(--text-xl);
+  }
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: var(--text-3xl); }
-  h2 { font-size: var(--text-2xl); }
-  h3 { font-size: var(--text-xl); }
-  h4 { font-size: var(--text-lg); }
+  h1 {
+    font-size: var(--text-3xl);
+  }
+
+  h2 {
+    font-size: var(--text-2xl);
+  }
+
+  h3 {
+    font-size: var(--text-xl);
+  }
+
+  h4 {
+    font-size: var(--text-lg);
+  }
 }
 
 p {
@@ -64,7 +98,18 @@ strong {
 }
 
 /* Utility: coloured text highlights used in headings */
-.text-pink  { color: var(--color-brand-pink); }
-.text-green { color: var(--color-neon-green); }
-.text-gold  { color: var(--color-star-gold);  }
-.text-blue  { color: var(--color-galaxy-blue);}
+.text-pink {
+  color: var(--color-brand-pink);
+}
+
+.text-green {
+  color: var(--color-neon-green);
+}
+
+.text-gold {
+  color: var(--color-star-gold);
+}
+
+.text-blue {
+  color: var(--color-galaxy-blue);
+}

@@ -15,22 +15,24 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // ── Hamburger toggle ─────────────────────────────────────────────────────────
-hamburger.addEventListener('click', () => {
-  const isOpen = hamburger.classList.toggle('open');
-  mobileNav.classList.toggle('open', isOpen);
-  hamburger.setAttribute('aria-expanded', isOpen);
-  mobileNav.setAttribute('aria-hidden', !isOpen);
-});
+if (hamburger && mobileNav) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('open');
+    mobileNav.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    mobileNav.setAttribute('aria-hidden', String(!isOpen));
+  });
 
-// Close mobile nav when a link inside it is clicked
-mobileNav.addEventListener('click', (e) => {
-  if (e.target.matches('a')) {
-    hamburger.classList.remove('open');
-    mobileNav.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', 'false');
-    mobileNav.setAttribute('aria-hidden', 'true');
-  }
-});
+  // Close mobile nav when a link inside it is clicked
+  mobileNav.addEventListener('click', (e) => {
+    if (e.target.matches('a')) {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileNav.setAttribute('aria-hidden', 'true');
+    }
+  });
+}
 
 // ── Active section highlight via IntersectionObserver ────────────────────────
 const sectionIds = ['hero', 'feste', 'animazione', 'galleria', 'testimonianze', 'chi-siamo', 'contatti'];

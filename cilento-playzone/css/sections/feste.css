@@ -206,7 +206,7 @@
 }
 
 @media (max-width: 480px) {
-  .section { padding: var(--space-12) var(--space-4); }
+  .section { padding: var(--space-12) var(--space-5); }
 
   .feature-card { padding: var(--space-6); }
 

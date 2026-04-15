@@ -3,7 +3,7 @@
 const form        = document.getElementById('contact-form');
 const formSuccess = document.getElementById('form-success');
 
-if (!form) return; // guard if section not present
+if (form) { // guard if section not present
 
 // ── Validation rules ─────────────────────────────────────────────────────────
 
@@ -136,3 +136,5 @@ form.addEventListener('submit', (e) => {
   formSuccess.hidden = false;
   formSuccess.querySelector('h3')?.focus();
 });
+
+} // end if (form)

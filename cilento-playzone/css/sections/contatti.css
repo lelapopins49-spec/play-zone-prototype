@@ -239,8 +239,13 @@
     padding: var(--space-6);
   }
 
+  .form-input {
+    min-height: 44px;
+  }
+
   .form-submit {
     align-self: stretch;
     text-align: center;
+    min-height: 52px;
   }
 }
